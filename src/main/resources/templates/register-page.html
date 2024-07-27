@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Register</title>
+</head>
+<body>
+<div class="register-container">
+
+    <h2>Register</h2>
+
+    <div th:if="${param.alreadyExist}">
+        <div style="color:red;">
+            User already exists. Please try logging in.
+        </div>
+    </div>
+    <form th:action="@{/registerSubmit}" th:object="${user}" method="POST" class="form-horizontal">
+        <div class="form-group">
+            <label for="username">username:</label>
+            <input type="text" id="username" th:field="*{username}" name="uname" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" th:field="*{email}" name="uemail" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" th:field="*{password}"  name="upassword" required>
+        </div>
+        <div class="form-group">
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" th:field="*{confirmPassword}"  name="ucpassword" required>
+        </div>
+        <div th:if="${param.error}">
+            <div style="color:red;">
+                Password and Confirm Password do not match
+            </div>
+        </div>
+        <div class="form-group">
+            <button type="submit">Register</button>
+        </div>
+    </form>
+    Already have an account? <a th:href="@{/loginPage}">Login</a>
+</div>
+</body>
+</html>
