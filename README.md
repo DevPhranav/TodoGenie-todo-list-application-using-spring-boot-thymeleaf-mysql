@@ -57,7 +57,7 @@ Create a MySQL database and update the src/main/resources/application.properties
    ```
 6. **Access the Application**
 
-  Open your web browser and go to http://localhost:8080.
+      Open your web browser and go to http://localhost:8080.
 
 
   ## Usage
