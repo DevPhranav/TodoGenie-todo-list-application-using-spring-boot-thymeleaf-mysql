@@ -63,10 +63,10 @@ Create a MySQL database and update the src/main/resources/application.properties
   ## Usage
 
 ### Register
-Go to [http://localhost:8080/register](http://localhost:8080/registerPage) to create a new account.
+Go to [http://localhost:8080/register](http://localhost:8080/) to create a new account.
 
 ### Login
-Go to [http://localhost:8080/login](http://localhost:8080/loginPage) to log in with your credentials.
+Go to [http://localhost:8080/login](http://localhost:8080/) to log in with your credentials.
 
 ### Add Todo
 After logging in, you can add new to-do items by clicking on the "Add Todo" button and filling out the form.
