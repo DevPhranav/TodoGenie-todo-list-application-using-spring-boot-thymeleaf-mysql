@@ -34,28 +34,28 @@ ToDoGenie is a simple to-do list application built using Spring Boot, Thymeleaf,
    git clone https://github.com/yourusername/ToDoGenie.git
    cd ToDoGenie
    ```
-2. **Configure the Database**
+3. **Configure the Database**
 
 Create a MySQL database and update the src/main/resources/application.properties file with your database configurations.
 
-``` bash
-spring.application.name=ToDoGenie
-spring.datasource.url=jdbc:mysql://localhost:3306/todogenie
-spring.datasource.username=yourMySQLusername
-spring.datasource.password=yourMySQLPassword
-```
+   ```bash
+   spring.application.name=ToDoGenie
+   spring.datasource.url=jdbc:mysql://localhost:3306/todogenie
+   spring.datasource.username=yourMySQLusername
+   spring.datasource.password=yourMySQLPassword
+   ```
 3. **Build the Project**
       Build project through command line by
-    ``` bash
-     mvn clean install
-    ```
+   ```bash
+   mvn clean install
+   ```
     or in IntelliJ IDEA by clicking start button it will build and run the project
 
-4. **To Manually run the project**
-  ```bash
-    mvn spring-boot:run
+5. **To Manually run the project**
+   ```bash
+   mvn spring-boot:run
    ```
-5. **Access the Application**
+6. **Access the Application**
 
   Open your web browser and go to http://localhost:8080.
 
